@@ -14,8 +14,9 @@ int main(void)
 	while(word[x] != '\0')
 	{
 		char w = word[x];
-		_putchar(w);
+		_putchar(word[x]);
 		x++;
 	}
+	printf("\n);
 	return(0);	
 }
