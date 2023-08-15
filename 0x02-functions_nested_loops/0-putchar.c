@@ -16,6 +16,6 @@ while(word[x] != EOF)
 	_putchar(word[x]);
 	x++;
 }
-putchar('\n');
+printf('\n');
 return(0);	
 }
