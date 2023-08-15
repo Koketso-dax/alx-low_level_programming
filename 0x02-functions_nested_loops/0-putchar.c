@@ -12,8 +12,6 @@ int main(void)
 	int x = 0;
 
 	while(word[x] != '\0')
-	{
-		char w = word[x];
 		_putchar(word[x]);
 		x++;
 	}
