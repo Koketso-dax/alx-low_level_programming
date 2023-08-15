@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
+
 /**
- * Main - will print out _putchar followed by a new line.
- * Description: Will print out a string
+ * Main - Entry point for funtion prototyped in main.h
+ * Description - Will print out a string (_putcha)
  * Return: Should be 0 to indicate success.
  */
 int main(void)
