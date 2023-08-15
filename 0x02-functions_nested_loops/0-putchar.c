@@ -17,6 +17,6 @@ int main(void)
 		_putchar(word[x]);
 		x++;
 	}
-	printf("\n);
+	printf("\n");
 	return(0);	
 }
