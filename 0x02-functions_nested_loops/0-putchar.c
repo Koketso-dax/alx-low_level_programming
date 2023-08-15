@@ -3,10 +3,9 @@
 #include <string.h>
 /**
  * Main - will print out _putchar followed by a new line.
- * 
+ * Description: Will print out a string
  * Return: Should be 0 to indicate success.
  */
-
 int main (void)
 {
 char *str = "_putchar\n";
