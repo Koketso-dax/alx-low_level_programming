@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * Main - will print out _putchar followed by a new line.
  * 
@@ -8,14 +9,7 @@
 
 int main(void)
 {
-char word[] = "_putchar";
-int x = 0;
-
-while(word[x] != EOF)
-{
-	_putchar(word[x]);
-	x++;
-}
-printf("%s","\n");
+char* str = "_putchar\n";
+printf("%s", str);
 return(0);	
 }
