@@ -6,9 +6,9 @@
  * Description: Will print out a string
  * Return: Should be 0 to indicate success.
  */
-int main (void)
+int main(void)
 {
 char *str = "_putchar\n";
-printf ("%s", str);
+printf("%s", str);
 return (0);
 }
