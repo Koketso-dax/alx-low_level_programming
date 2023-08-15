@@ -11,10 +11,10 @@ int main(void)
 	char word[] = "_putchar";
 	int x = 0;
 
-	while(word[x] != '\0')
+	while(word[x] != EOF)
 		_putchar(word[x]);
 		x++;
 	}
-	printf("\n");
+	putchar("\n");
 	return(0);	
 }
