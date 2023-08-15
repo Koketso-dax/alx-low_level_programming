@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet_x10 - entry point function prototyped in main.h
- * description: will print out the alphabet (a-z) ten times followed by a newline.
+ * description: will print out the alphabet (a-z) x10.
  */
 
 void print_alphabet_x10(void)
@@ -12,12 +12,13 @@ void print_alphabet_x10(void)
 	while (x <= 9)
 	{
 		char _abc = 'a';
+
 		while (_abc <= 'z')
 		{
 			_putchar (_abc);
 			_abc++;
 		}
-	x++;	
+	x++;
 	}
-	_putchar ('/n');
+_putchar ('/n');
 }
