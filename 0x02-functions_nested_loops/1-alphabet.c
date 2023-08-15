@@ -1,10 +1,12 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
  * main - entry point function for prototype defined in main.h.
  * description: prints out alphabet from a-z (lowercase)
  * Return: must be 0.
  */
-int main(void)
+
+void print_alphabet(void)
 {
 	char _abc = 'a';
 
@@ -12,7 +14,7 @@ int main(void)
 	{
 	putchar (_abc);
 	_abc++;
-	putchar ('\n');
 	}
+	putchar ('\n');
 	return (0);
 }
