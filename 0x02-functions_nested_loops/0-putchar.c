@@ -13,8 +13,8 @@ int main(void)
 
 	while(word[x] != EOF)
 		_putchar(word[x]);
-		x++;
+	x++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return(0);	
 }
