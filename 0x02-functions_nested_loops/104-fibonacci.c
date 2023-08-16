@@ -12,11 +12,11 @@ int main(void)
 	int x = 0;
 
 	printf("%lu, %lu, ", a, b);
-	while (x < 96)
+	while (x < 95)
 	{
 		c = a + b;
 		printf("%lu", c);
-		if (x < 95)
+		if (x < 94)
 		{
 			printf(", ");
 		}
