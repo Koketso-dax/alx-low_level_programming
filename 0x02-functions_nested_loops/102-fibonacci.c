@@ -9,14 +9,14 @@ int main(void)
 	unsigned long a = 1;
 	unsigned long b = 2;
 	unsigned long c = 0;
-	int x = 0;
+	int x = 1;
 
 	printf("%lu, %lu, ", a, b);
 	while (x < 48)
 	{
 		c = a + b;
 		printf("%lu", c);
-		if (x != 48)
+		if (x < 48)
 		{
 			printf(", ");
 		}
