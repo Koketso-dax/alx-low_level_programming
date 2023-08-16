@@ -17,7 +17,7 @@ void print_times_table(int n)
 		for (b = 0; b <= n; b++)
 		{
 			int c = a * b;
-			int d = (c / 10) % 10
+			int d = (c / 10) % 10;
 
 			if (b == 0)
 				putchar('0' + c);
