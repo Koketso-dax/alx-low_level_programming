@@ -17,7 +17,9 @@ void jack_bauer(void)
 		for (hr2; hr2 <= 9; hr2++)
 		{
 			if (hr1 == 2 && hr2 == 4)
-				return;
+			{
+				break;
+			}
 			for (sec1; sec1 < 6; sec1++)
 			{
 				for (sec2; sec2 <= 9; sec2)
