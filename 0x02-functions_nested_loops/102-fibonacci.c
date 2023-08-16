@@ -11,7 +11,7 @@ int main(void)
 	unsigned long c = 0;
 	int x = 0;
 
-	printf("%llu, %llu, ", a, b);
+	printf("%lu, %lu, ", a, b);
 	while (x < 48)
 	{
 		c = a + b;
