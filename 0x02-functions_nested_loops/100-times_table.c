@@ -31,7 +31,7 @@ void print_times_table(int n)
 			{
 				printf(" %d%d", tmp / 10, tmp % 10);
 			}
-			else 
+			else
 				printf("%d%d%d", tmp / 100, (tmp / 10) % 10, tmp % 10);
 			if (y < n)
 				printf(", ");
