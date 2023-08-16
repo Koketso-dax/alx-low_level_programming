@@ -15,8 +15,8 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		if ((n1 % 2) == 0)
-			sum += c;
+		if ((a % 2) == 0)
+			sum += a;
 	}
 	printf("%ld\n", sum);
 	return (0);
