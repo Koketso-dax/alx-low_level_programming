@@ -17,6 +17,7 @@ void print_times_table(int n)
 		for (b = 0; b <= n; b++)
 		{
 			int c = a * b;
+			int d = (c / 10) % 10
 
 			if (b == 0)
 				putchar('0' + c);
@@ -25,7 +26,7 @@ void print_times_table(int n)
 			else if (c < 100)
 				putchar(' '), putchar('0' + c / 10), putchar('0' + c % 10);
 			else
-				putchar('0' + c / 100), putchar('0' + (c / 10) % 10), putchar('0' + c % 10);
+				putchar('0' + c / 100), putchar('0' + d), putchar('0' + c % 10);
 			if (b < n)
 				putchar(','), putchar(' ');
 		}
