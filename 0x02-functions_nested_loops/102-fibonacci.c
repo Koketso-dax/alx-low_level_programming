@@ -15,7 +15,7 @@ int main(void)
 	while (x < 48)
 	{
 		c = a + b;
-		printf("%d", c);
+		printf("%lu", c);
 		if (x < 48)
 		{
 			printf(", ");
