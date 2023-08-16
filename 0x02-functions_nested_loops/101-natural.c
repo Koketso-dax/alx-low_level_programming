@@ -2,7 +2,7 @@
 /**
  * main - function entry point
  * description: prints sum of all multiples of 3 and 5 below 1024
- * return: should be zero.
+ * Return: should be zero.
  */
 int main(void)
 {
@@ -18,5 +18,6 @@ int main(void)
 		c++;
 	}
 	printf("%d", a);
+	putchar('\n');
 	return (0);
 }
