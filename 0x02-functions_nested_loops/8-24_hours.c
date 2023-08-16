@@ -12,17 +12,17 @@ void jack_bauer(void)
 	int sec1 = 0;
 	int sec2 = 0;
 
-	for (hr1; hr1 < 3; hr1++)
+	for (hr1 = 0; hr1 < 3; hr1++)
 	{
-		for (hr2; hr2 <= 9; hr2++)
+		for (hr2 = 0; hr2 <= 9; hr2++)
 		{
 			if ((hr1 == 2) && (hr2 == 4))
 			{
 				break;
 			}
-			for (sec1; sec1 < 6; sec1++)
+			for (sec1 = 0; sec1 < 6; sec1++)
 			{
-				for (sec2; sec2 <= 9; sec2)
+				for (sec2 = 0; sec2 <= 9; sec2)
 				{
 					printf("%d%d:%d%d\n", hr1, hr2, sec1, sec2);
 				}
