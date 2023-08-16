@@ -9,6 +9,7 @@
 void print_times_table(int n)
 {
 	int x, y;
+	int tmp = 0;
 
 	if (n < 0 || n > 15)
 	
@@ -17,7 +18,7 @@ void print_times_table(int n)
 	{
 		for(y = 0; y <= n; y++)
 		{
-			int tmp = x * y;
+			tmp = x * y;
 
 			if (y == 0)
 			{
