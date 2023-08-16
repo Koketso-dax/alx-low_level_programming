@@ -22,7 +22,7 @@ void jack_bauer(void)
 			}
 			for (sec1 = 0; sec1 < 6; sec1++)
 			{
-				for (sec2 = 0; sec2 <= 9; sec2)
+				for (sec2 = 0; sec2 <= 9; sec2++)
 				{
 					printf("%d%d:%d%d\n", hr1, hr2, sec1, sec2);
 				}
