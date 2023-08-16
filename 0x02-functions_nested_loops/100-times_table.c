@@ -8,34 +8,29 @@
 
 void print_times_table(int n)
 {
-	int x, y;
-	int tmp = 0;
+    int a, b;
 
-	if (n < 0 || n > 15)
-		return;
-	for (x = 0; x <= n; x++)
-	{
-		for (y = 0; y <= n; y++)
-		{
-			tmp = x * y;
+    if (n < 0 || n > 15)
+        return;
 
-			if (y == 0)
-			{
-				printf(" %d", tmp);
-			}
-			else if (tmp < 10)
-			{
-				printf(" %d", tmp);
-			}
-			else if (tmp < 100)
-			{
-				printf(" %d%d", tmp / 10, tmp % 10);
-			}
-			else
-				printf("%d%d%d", tmp / 100, (tmp / 10) % 10, tmp % 10);
-			if (y < n)
-				printf(", ");
-		}
-		printf("\n");
-	}
+    for (a = 0; a <= n; a++)
+    {
+        for (b = 0; b <= n; b++)
+        {
+            int rep = a * b;
+
+            if (b == 0)
+                _putchar('0' + rep);
+            else if (rep < 10)
+                _putchar(' '), _putchar(' '), _putchar('0' + rep);
+            else if (rep < 100)
+                _putchar(' '), _putchar('0' + rep / 10), _putchar('0' + rep % 10);
+            else
+                _putchar('0' + rep / 100), _putchar('0' + (rep / 10) % 10), _putchar('0' + rep % 10);
+
+            if (b < n)
+                _putchar(','), _putchar(' ');
+        }
+        _putchar('\n');
+    }
 }
