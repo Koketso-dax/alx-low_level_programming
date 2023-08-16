@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * print_times_table - implements overloaded function in main.h
  * @n: input number
