@@ -11,7 +11,7 @@ void jack_bauer(void)
 	int sec1 = 0;
 	int sec2 = 0;
 
-	for (hr; hr < 3;hr++)
+	for (hr1; hr1 < 3; hr1++)
 	{
 		for (hr2; hr2 <= 9; hr2++)
 		{
