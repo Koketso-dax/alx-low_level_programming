@@ -16,13 +16,11 @@ void print_times_table(int n)
 	{
 		return;
 	}
-	else
-	{
 		while (x <= n)
-			for (x = 0; x <= n; x++)
+			for (y = 0; y <= n; y++)
 			{
-				temp = x * n;
-				if (x == n)
+				temp = y * n;
+				if (y == n)
 				{
 				printf("%d", temp);
 				}
@@ -32,5 +30,4 @@ void print_times_table(int n)
 				}
 			}
 		putchar('\n');
-	}
 }
