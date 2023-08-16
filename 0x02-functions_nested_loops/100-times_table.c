@@ -27,6 +27,6 @@ void print_times_table(int n)
 				printf("%d, ", x * n);
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
