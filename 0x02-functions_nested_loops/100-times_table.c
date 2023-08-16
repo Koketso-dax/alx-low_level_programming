@@ -9,13 +9,12 @@
 void print_times_table(int n)
 {
     int a, b;
-
     if (n < 0 || n > 15)
         return;
 
-    for (a = 0; a <= n; a++)
+    for(a = 0; a <= n; a++)
     {
-        for (b = 0; b <= n; b++)
+        for(b = 0; b <= n; b++)
         {
             int rep = a * b;
 
