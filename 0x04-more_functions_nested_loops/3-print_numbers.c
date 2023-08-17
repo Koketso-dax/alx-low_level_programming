@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
  * print_numbers - will print numbers from 0 - 9 followed by a new line.
