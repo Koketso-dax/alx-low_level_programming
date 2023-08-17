@@ -14,7 +14,7 @@ int main(void)
 		{
 			printf("%d", x);
 		}
-		if ((x % 3 == 0) && (x % 5 == 0))
+		else if ((x % 3 == 0) && (x % 5 == 0))
 		{
 			printf(" %s", "FizzBuzz");
 		}
