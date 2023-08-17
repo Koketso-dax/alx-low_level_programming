@@ -1,8 +1,9 @@
 /**
  * _isupper - returns 1 if upper and 0 otherwise.
- * @n: input char.
+ * @c: input char.
  * Return: 0 or 1.
  */
+
 int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
