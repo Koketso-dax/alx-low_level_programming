@@ -10,20 +10,24 @@ int main(void)
 
 	for (x = 1; x <= 100; x++)
 	{
+		if (x = 1)
+		{
+			printf("%d", x);
+		}
 		if ((x % 3 == 0) && (x % 5 == 0))
 		{
-			printf("%s ", "FizzBuzz");
+			printf(" %s", "FizzBuzz");
 		}
 		else if (x % 3 == 0)
 		{
-			printf("%s ", "Fizz");
+			printf(" %s", "Fizz");
 		}
 		else if (x % 5 == 0)
 		{
-			printf("%s ", "Buzz");
+			printf(" %s", "Buzz");
 		}
 		else
-			printf("%d ", x);
+			printf(" %d", x);
 	}
 	putchar('\n');
 	return (0);
