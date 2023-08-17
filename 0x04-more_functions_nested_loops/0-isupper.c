@@ -1,7 +1,7 @@
 /**
  * _isupper - returns 1 if upper and 0 otherwise.
- * @n - input char.
- * Returns: 0 or 1.
+ * @n: input char.
+ * Return: 0 or 1.
  */
 int _isupper(int c)
 {
