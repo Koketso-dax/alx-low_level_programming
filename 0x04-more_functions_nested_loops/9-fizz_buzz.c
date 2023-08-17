@@ -10,7 +10,7 @@ int main(void)
 
 	for (x = 1; x <= 100; x++)
 	{
-		if (x = 1)
+		if (x == 1)
 		{
 			printf("%d", x);
 		}
