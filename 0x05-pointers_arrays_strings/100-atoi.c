@@ -1,4 +1,5 @@
 #include <stdbool.h>
+#include <ctype.h>
 
 /**
  * _atoi - converts string to interger
@@ -9,19 +10,22 @@
 int _atoi(char *s)
 {
 	int sign = 1;
-	unsigned int num = 0;
-	bool dg = false;
-	
+	int num = 0;
+	bool digits = false;
+
 	while (*s != '\0')
 	{
-		if(*s == '-')
+		if (*s == '-')
 			sign = -1;
-		else if (*s >= '0' && *s <= '9')
+		else if (*s == '+' || isdigit(*s))
 		{
-			num = (num * 10) + (*s - '0') * sign;
-			dg = true;
+			if (isdigit(*s))
+			{
+				num = (num * 10) + (*s - '0') * sign;
+				digits = true;
+			}
 		}
-		else if (dg)
+		else if (digits || !isspace(*s))
 		{
 			break;
 		}
