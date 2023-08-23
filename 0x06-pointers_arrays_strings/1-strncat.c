@@ -1,5 +1,5 @@
 /**
- * strncat - will concat str up to a certain nr of chars of the src
+ * _strncat - will concat str up to a certain nr of chars of the src
  * @dest: destination str
  * @src: source str
  * @n: number of bytes to copy from src
