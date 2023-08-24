@@ -6,20 +6,21 @@
 
 char *leet(char *s)
 {
-	char new_val[128];
-	int x;
+	int x, y;
+	int size = 5;
+	char up_map[] = {'a', 'e', 'o', 't', 'l', '\0'};
+	char low_map[] = {'A', 'E', 'O', 'T', 'L', '\0'};
+	char num_map[] = {'4', '3', '0', '7', '1', '\0'};
 
-	new_val['a'] = new_val['A'] = '4';
-	new_val['e'] = new_val['E'] = '3';
-	new_val['o'] = new_val['O'] = '0';
-	new_val['t'] = new_val['T'] = '7';
-	new_val['l'] = new_val['L'] = '1';
-		for (x = 0; s[x] != '\0'; x++)
+	for (x = 0; s[x] != '\0'; ++x)
+	{
+		for (y = 0; y < size; y++)
 		{
-			if (new_val[(int)s[x]] != 0)
+			if (s[x] == up_map[y] || s[x] == low_map[y])
 			{
-				s[x] = new_val[(int)s[x]];
+				s[x] = num_map[y];
 			}
 		}
-		return (s);
+	}
+	return (s);
 }
