@@ -3,6 +3,7 @@
  * @s: input str
  * Return: Encoded str
  */
+
 char *leet(char *s)
 {
 	char new_val[128];
@@ -13,11 +14,12 @@ char *leet(char *s)
 	new_val['o'] = new_val['O'] = '0';
 	new_val['t'] = new_val['T'] = '7';
 	new_val['l'] = new_val['L'] = '1';
-
-    for (x = 0; s[x] != '\0'; x++) {
-        if (new_val[(int)s[x]] != 0) {
-            s[x] = new_val[(int)s[x]];
-        }
-    }
-    return (s);
+		for (x = 0; s[x] != '\0'; x++)
+		{
+			if (new_val[(int)s[x]] != 0)
+			{
+				s[x] = new_val[(int)s[x]];
+			}
+		}
+		return (s);
 }
