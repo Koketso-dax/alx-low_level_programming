@@ -6,15 +6,15 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *ptr = s;
 
-	while (*ptr != '\0')
+	while (*s)
 	{
-		if (*ptr == c)
+		s++;
+
+		if (*s == c)
 		{
-			return (ptr);
+			return (s);
 		}
-		ptr++;
 	}
 	return (0);
 }
