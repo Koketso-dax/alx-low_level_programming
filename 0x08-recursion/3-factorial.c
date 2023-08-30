@@ -1,6 +1,7 @@
 /**
  * factorial - will calc the factorial of a given input
  * @n: input number
+ * Return: factorial.
  */
 int factorial(int n)
 {
