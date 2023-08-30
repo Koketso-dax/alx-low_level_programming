@@ -21,4 +21,6 @@ int _sqrt(int n, int x);
 
 int prime(int n, int i);
 
+int is_palindrome(char *s);
+
 #endif

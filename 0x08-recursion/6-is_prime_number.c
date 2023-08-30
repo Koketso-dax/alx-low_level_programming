@@ -10,11 +10,12 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return(prime(n, n - 1));
+	return (prime(n, n - 1));
 }
 /**
  * prime - will return 1 if given input is prime
  * @n: int input
+ * @i: Stack frame index
  * Return: 1 if prime. 0 otherwise
  */
 int prime(int n, int i)
