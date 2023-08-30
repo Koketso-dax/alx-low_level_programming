@@ -23,4 +23,8 @@ int prime(int n, int i);
 
 int is_palindrome(char *s);
 
+int check_str(char *s, int left, int right);
+
+int wildcmp(char *s1, char *s2);
+
 #endif
