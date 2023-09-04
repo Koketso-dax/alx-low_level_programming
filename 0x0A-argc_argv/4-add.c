@@ -10,7 +10,8 @@
 
 int main(int argc, char **argv)
 {
-	int x, y, sum = 0;
+	int x, y;
+	unsigned int sum = 0;
 
 	for (x = 1; x < argc; x++)
 	{
