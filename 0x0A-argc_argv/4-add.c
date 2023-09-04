@@ -8,23 +8,20 @@
  * Return: 0 if success. 1 on failure
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int x, y;
+	int x;
 	unsigned int sum = 0;
 
 	for (x = 1; x < argc; x++)
 	{
-		for (y = 0; argv[x][y] != '\0'; y++)
+		if (*argv[x] < '0' || *argv[x] > '9')
 		{
-			if (argv[x][y] < '0' || argv[x][y] > '9')
-			{
-				printf("%s\n", "Error");
-				return (1);
-			}
-			else
-				sum += atoi(argv[x]);
+			printf("%s\n", "Error");
+			return (1);
 		}
+		else
+			sum += atoi(argv[x]);
 	}
 	printf("%d\n", sum);
 	return (0);
