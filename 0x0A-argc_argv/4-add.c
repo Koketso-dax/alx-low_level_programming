@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - will add together positive numbers
@@ -17,13 +18,13 @@ int main(int argc, char *argv[])
 	{
 		for (y = 0; argv[x][y] != '\0'; y++)
 		{
-			if (argv[x][y] < '0' || argv[x][y] > '9')
+			if (!isdigit(argv[x][y]))
 			{
 				printf("%s\n", "Error");
 				return (1);
 			}
-			sum += atoi(argv[x]);
 		}
+		sum += atoi(argv[x]);
 	}
 	printf("%d\n", sum);
 	return (0);
