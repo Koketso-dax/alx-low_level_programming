@@ -10,18 +10,20 @@
 
 int main(int argc, char *argv[])
 {
-	int x;
+	int x, y;
 	unsigned int sum = 0;
 
 	for (x = 1; x < argc; x++)
 	{
-		if (*argv[x] < '0' || *argv[x] > '9')
+		for (y = 0; argv[x][y] != '\0'; y++)
 		{
-			printf("%s\n", "Error");
-			return (1);
-		}
-		else
+			if (argv[x][y] < '0' || argv[x][y] > '9')
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
 			sum += atoi(argv[x]);
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
