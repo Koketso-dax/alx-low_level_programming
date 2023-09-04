@@ -2,6 +2,8 @@
 #include <stdlib.h>
 /** 
  * main - will return product of  2 int
+ * @argc: num of args (should be 3)
+ * @argv: [] of args (name + 2 operands = 3)
  * Return: always 0.
  */
 int main(int argc, char **argv)
