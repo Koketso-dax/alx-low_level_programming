@@ -15,10 +15,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	strcpy(s, str);
 	if (s == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(s, str);
 	return (s);
 }
