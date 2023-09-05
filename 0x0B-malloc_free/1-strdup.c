@@ -13,7 +13,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 
 	len = strlen(str) + 1;
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
 	if (s == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 	return (s);
 }
