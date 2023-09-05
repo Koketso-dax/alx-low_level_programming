@@ -15,13 +15,16 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else
+	
+	arr = malloc(size * sizeof(c));
+
+	if (arr == NULL)
 	{
-		arr = (void *)malloc(size * sizeof(c));
-		for (x = 0; x < size; x++)
-		{
-			arr[x] = c;
-		}
+		return (NULL);
+	}
+	for (x = 0; x < size; x++)
+	{
+		arr[x] = c;
 	}
 	return (arr);
 }
