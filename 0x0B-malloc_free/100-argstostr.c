@@ -22,7 +22,7 @@ char *argstostr(int ac, char *av[])
 		len += strlen(av[x]) + 1;
 	}
 
-	str = (char *)malloc(len);
+	str = (char *)malloc(len + 1);
 
 	if (str == NULL)
 	{
