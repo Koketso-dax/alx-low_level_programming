@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 	cents = atoi(argv[1]);
 	if (cents <= 0)
 	{
-		printf("Error\n");
-		return (1);
+		printf("%d\n", 0);
+		return (0);
 	}
 	for (i = 0; cents > 0; i++)
 	{
