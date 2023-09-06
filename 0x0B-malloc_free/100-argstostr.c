@@ -12,12 +12,12 @@ char *argstostr(int ac, char *av[])
 	int x;
 	char *str;
 
-	if (ac <= 1 || av == NULL)
+	if (ac = 0 || av == NULL)
 	{
 		return (NULL);
 	}
 
-	for (x = 1; x < ac; x++)
+	for (x = 0; x < ac; x++)
 	{
 		len += strlen(av[x]) + 1;
 	}
@@ -29,8 +29,7 @@ char *argstostr(int ac, char *av[])
 		return (NULL);
 	}
 
-
-	for (x = 1; x < ac; x++)
+	for (x = 0; x < ac; x++)
 	{
 		strcat(str, av[x]);
 		if (x < (ac - 1))
