@@ -29,7 +29,6 @@ char *argstostr(int ac, char *av[])
 		return (NULL);
 	}
 
-	str[0] = '\0';
 
 	for (x = 1; x < ac; x++)
 	{
