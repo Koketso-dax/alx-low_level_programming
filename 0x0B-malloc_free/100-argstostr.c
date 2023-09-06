@@ -14,7 +14,7 @@ char *argstostr(int ac, char *av[])
 
 	if (ac <= 1 || av == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 
 	for (x = 1; x < ac; x++)
@@ -26,8 +26,7 @@ char *argstostr(int ac, char *av[])
 
 	if (str == NULL)
 	{
-		free(str);
-		return (0);
+		return (NULL);
 	}
 
 	str[0] = '\0';
