@@ -15,7 +15,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	if (new_size == old_size)
 		return (ptr);
-	if (new_size > 0 || ptr == NULL)
+	if (new_size >= 0 || ptr == NULL)
 	{
 		nmem = malloc(new_size);
 		if (nmem == NULL)
@@ -23,7 +23,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			return (0);
 		}
 	}
-	if (new_size >= 0 && ptr != NULL)
+	if (new_size > 0 && ptr != NULL)
 	{
 		write = nmem;
 		read = ptr;
