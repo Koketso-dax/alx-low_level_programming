@@ -2,9 +2,8 @@
 #include "dog.h"
 
 /**
- * print_dog - prints a struct 
+ * print_dog - prints a struct
  * @d: dog's structure
- *
  */
 
 void print_dog(struct dog *d)

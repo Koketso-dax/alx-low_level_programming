@@ -1,5 +1,11 @@
 #ifndef _dog_h_
 #define _dog_h_
+/**
+ * struct dog - user def struct for dogs
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog's owner's name
+ */
 typedef struct dog
 {
 	char *name;
