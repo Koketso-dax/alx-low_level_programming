@@ -28,7 +28,14 @@ int main(int argc, char *argv[])
 	for (x = 0; x < bytes; x++)
 	{
 		printf("%02hhx", ptr[x]);
+		if (x < (bytes - 1))
+		{
+			printf(" ");
+		}
+		else
+		{
+			printf("\n");
+		}
 	}
-	putchar('\n');
 	return (0);
 }
