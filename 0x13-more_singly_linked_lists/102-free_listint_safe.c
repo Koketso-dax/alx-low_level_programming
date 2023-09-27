@@ -7,27 +7,24 @@
 size_t free_listint_safe(listint_t **h)
 {
 	size_t len = 0;
-	int neg;
-	listint_t *node;
+	listint_t *node, *temp;
 
 	if (!h || !*h)
 	{
 		return (0);
 	}
 
-	while (*h)
+	node = *h;
+
+	while (node)
 	{
-		neg = *h - (*h)->next;
-		if (neg > 0)
+		temp = node->next;
+		free(node);
+		node = temp;
+		len++;
+
+		if (node == *h)
 		{
-			node = (*h)->next;
-			*h = node;
-			len++;
-		}
-		else
-		{
-			*h = NULL;
-			len++;
 			break;
 		}
 	}
