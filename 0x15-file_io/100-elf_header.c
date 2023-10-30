@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	{
 		error_msg("Failed to open the ELF file");
 	}
-	if (read(fd, &header, sizeof(ELF64_Ehdr)) != sizeof(Elf64_Ehdr))
+	if (read(fd, &header, sizeof(Elf64_Ehdr)) != sizeof(Elf64_Ehdr))
 	{
 		error_msg("Failed to read ELF header");
 	}
