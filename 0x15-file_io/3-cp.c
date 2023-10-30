@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	file2 = open(argv[2], O_TRUNC | O_CREAT | O_WRONLY, 0664);
 	if (file2 < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Ca't write to %s\n", argv[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
 	while ((bytes_read = read(file1, buffer, BUFFER_SIZE)) > 0)
 	{
