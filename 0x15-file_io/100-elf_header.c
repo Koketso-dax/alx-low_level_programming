@@ -25,28 +25,28 @@ void print_elf(char *filename)
 		exit(98);
 	}
 	printf("ELF Header:\n");
-	printf("Magic:");
+	printf("Magic: ");
 	for (x = 0; x < EI_NIDENT; x++)
 	{
-		printf(" %02x ", header.e_ident[x]);
+		printf(" %02x", header.e_ident[x]);
 	}
 	printf("\n");
-	printf("Class:");
+	printf("Class: ");
 	switch (header.e_ident[EI_CLASS])
 	{
 		case ELFCLASS32: printf("ELF32\n"); break;
 		case ELFCLASS64: printf("ELF64\n"); break;
 		default: printf("<unknown: %x>\n", header.e_ident[EI_CLASS]);
 	}
-	printf("Data:");
+	printf("Data: ");
 	switch (header.e_ident[EI_DATA])
 	{
 		case ELFDATA2LSB: printf("2's complement, little endian\n"); break;
 		case ELFDATA2MSB: printf("2's complement, big endian\n"); break;
 		default: printf("<unknown: %x>\n", header.e_ident[EI_DATA]);
 	}
-	printf("Version:%i\n", header.e_ident[EI_VERSION]);
-	printf("OS/ABI:");
+	printf("Version: %i\n", header.e_ident[EI_VERSION]);
+	printf("OS/ABI: ");
 	switch (header.e_ident[EI_OSABI])
 	{
 		case ELFOSABI_SYSV: printf("UNIX - System V\n"); break;
@@ -61,8 +61,8 @@ void print_elf(char *filename)
 		case ELFOSABI_STANDALONE: printf("Standalone App\n"); break;
 		default: printf("<unknown: %x>\n", header.e_ident[EI_OSABI]);
 	}
-	printf("ABI Version:	%i\n", header.e_ident[EI_ABIVERSION]);
-	printf("Type:	");
+	printf("ABI Version: %i\n", header.e_ident[EI_ABIVERSION]);
+	printf("Type: ");
 	switch (header.e_type)
 	{
 		case ET_NONE: printf("NONE (Unknown type)\n"); break;
@@ -72,7 +72,7 @@ void print_elf(char *filename)
 		case ET_CORE: printf("CORE (Core file)\n"); break;
 		default: printf("<unknown: %x>\n", header.e_type);
 	}
-	printf("Entry point address:	%#x\n", (unsigned int)header.e_entry);
+	printf("Entry point address: %#x\n", (unsigned int)header.e_entry);
 	close(fd);
 }
 /**
