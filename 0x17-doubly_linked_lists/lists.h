@@ -7,6 +7,7 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
+#include <stddef.h>
 typedef struct dlistint_s
 {
 	    int n;
