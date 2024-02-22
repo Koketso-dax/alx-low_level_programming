@@ -17,7 +17,7 @@ fclean: clean
 re: fclean all
 -include $(SRC:.c=.d)
 %.d: %.c
-	@$(CC) -MM $(CFLAGS) $< | sed 's,$(notdir $*).o[ :]*,$*.o $@ : ,g' > $@
+	@gcc -MM $(CFLAGS) $< | sed 's,$(notdir $*).o[ :]*,$*.o $@ : ,g' > $@
 ifeq ($(wildcard m.h),)
 $(error Header file m.h not found)
 endif
